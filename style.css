@@ -6,6 +6,11 @@
 
 body, html {
     background-color: #f0f8ff;
+    overflow-x: hidden; 
+    color:black; 
+    font-family:'Opens Sans',helvetica;
+    height:100%; 
+    width:101%;
 }
 
 /* Buttons */
