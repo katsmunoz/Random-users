@@ -1,3 +1,23 @@
+// JQUERY ANIMATION
+
+$(document).ready(function() {
+    const show = $("#show");
+    const hide = $("#hide");
+    const info = $("#info");
+  
+    show.click(function() {
+      info.fadeIn(1000);
+    });
+
+    hide.click(function() {
+        info.fadeOut(1000);
+      });
+
+
+  });
+
+// DATA FROM URL
+
 const getInfo = () => {
  
     const url = 'https://randomuser.me/api/?results=20';
@@ -14,14 +34,14 @@ const getInfo = () => {
         const response = document.getElementById('info');
         response.innerHTML = '';
   
-        for (const person of data.results) {
+        for (const user of data.results) {
           response.innerHTML
                   += `<div class='cards'>
-                      <img src=${person.picture.large} class="person-img">
+                      <img src=${user.picture.large} class="user-img">
                   <div class='info-cards'>
-                      <p>Nombre: ${person.name.title} ${person.name.first} ${person.name.last}</p>
-                      <p>Teléfono: ${person.phone}</p>
-                      <p>Email: ${person.email}</p>
+                      <p>Nombre: ${user.name.title} ${user.name.first} ${user.name.last}</p>
+                      <p>Teléfono: ${user.phone}</p>
+                      <p>Email: ${user.email}</p>
               </div>`;
         }
       }
