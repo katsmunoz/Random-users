@@ -37,13 +37,14 @@ body, html {
 }
 
 .btn-1 {
-	border: 3px solid #fff;
-	color: #fff;
+	border: 3px solid #edeaec;
+	color: #edeaec;
 }
 
 .btn-1a:hover,
 .btn-1a:active {
-	color: #f0f8ff;
+    color: #fff;
+    border: 3px solid #fff;
 	background: linear-gradient(0deg, rgb(89, 191, 224) 0%, rgba(0,163,218,1) 100%);
 }
 
