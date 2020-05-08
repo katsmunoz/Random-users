@@ -18,7 +18,8 @@ body, html {
 .btn {
     border: none;
     font-family: inherit;
-    font-size: inherit;
+    font-size: small;
+    font-weight: lighter;
     color: inherit;
     background: none;
     cursor: pointer;
